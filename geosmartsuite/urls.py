@@ -15,6 +15,6 @@ Including another URLconf
 """
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
+    path('geoapp_test/', include('geoapp_test.urls')),
     path('admin/', admin.site.urls),
 ]
