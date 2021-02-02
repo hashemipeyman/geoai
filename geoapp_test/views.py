@@ -24,7 +24,7 @@ def smartrecommender(request, **kwargs):
     begin_start_time = time.time()
 
     # set input parameters
-    input_search_text = request.POST['search'])
+    input_search_text = request.POST['search']
 
 
     context = {}
