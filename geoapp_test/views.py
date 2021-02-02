@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 
@@ -7,6 +10,8 @@ import psycopg2
 import psycopg2.extras
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
+from json import JSONEncoder
+
 
 
 # Create your views here.
