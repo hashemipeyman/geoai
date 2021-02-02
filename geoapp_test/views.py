@@ -25,6 +25,6 @@ def smartrecommender(request, **kwargs):
 
     # set input parameters
     print("Im here in smartrecommender view")
-    req = json.loads(request.body)
-    print("Reques:    +++++++++   ")
-    print(req)
+    # req = json.loads(request.body)
+    print("Request:    +++++++++   ")
+    print(request)
