@@ -2,8 +2,18 @@
 <html>
   <head>
     <title>Interactive maps for Django web apps</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
    <h1>Map time!</h1>
+   <div id='map' style='width: 400px; height: 300px;'></div>
+   <script>
+   mapboxgl.accessToken = 'pk.eyJ1IjoiaGFzaGVtaXBleW1hbiIsImEiOiJja2tvMW8xMmYxenJqMnZ0ZHEwcm9uZW9uIn0.pUtfPgFF3IkJ2L8-CIuMhw';
+   var map = new mapboxgl.Map({
+   container: 'map',
+   style: 'mapbox://styles/mapbox/streets-v11'
+   });
+   </script>
   </body>
 </html>
