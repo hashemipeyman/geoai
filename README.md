@@ -1,1 +1,1 @@
-# geoai
+My first Django project
