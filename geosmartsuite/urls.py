@@ -19,5 +19,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('geoapp_test/', include('geoapp_test.urls')),
+    path('maps/', include('mapboxbasemap.urls')),
     path('admin/', admin.site.urls),
 ]
