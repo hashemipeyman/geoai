@@ -24,7 +24,9 @@ def smartrecommender(request, **kwargs):
     begin_start_time = time.time()
 
     # set input parameters
-    print("Im here in smartrecommender view")
-    # req = json.loads(request.body)
-    print("Request:    +++++++++   ")
-    print(request.POST['search'])
+    input_search_text = request.POST['search'])
+
+
+    context = {}
+    context['input_search_text'] = input_search_text
+    return JsonResponse(context, encoder=JSONEncoder)
