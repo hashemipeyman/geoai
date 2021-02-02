@@ -1,10 +1,15 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 
+import json
 import time
+import psycopg2
+import psycopg2.extras
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
+
 
 # Create your views here.
-from django.http import HttpResponse
 
 
 def index(request):
@@ -21,3 +26,5 @@ def smartrecommender(request, **kwargs):
     # set input parameters
     print("Im here in smartrecommender view")
     req = json.loads(request.body)
+    print("Reques:    +++++++++   ")
+    print(req)
