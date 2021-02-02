@@ -27,4 +27,4 @@ def smartrecommender(request, **kwargs):
     print("Im here in smartrecommender view")
     # req = json.loads(request.body)
     print("Request:    +++++++++   ")
-    print(request)
+    print(request.POST['search'])
